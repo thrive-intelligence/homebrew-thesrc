@@ -3,7 +3,7 @@
 ### macOS / Linux (Homebrew)
 
 ```bash
-brew tap shaneatlas/thesrc
+brew tap thrive-intelligence/thesrc
 brew install thesrc
 ```
 
