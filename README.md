@@ -26,4 +26,4 @@ This scaffolds `.mcp.json`, `CLAUDE.md`, `.env`, and `.claude/skills/` — then 
 ## Links
 
 - [thesrc.ai](https://thesrc.ai) — live dashboard
-- [Source repo](https://github.com/shaneatlas/the-src)
+- [Source repo](https://github.com/thrive-intelligence/the-src)

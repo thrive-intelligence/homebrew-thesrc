@@ -3,10 +3,10 @@ class Thesrc < Formula
 
   desc "Cognitive OS for Claude — epistemic discipline + external validation"
   homepage "https://thesrc.ai"
-  url "https://github.com/shaneatlas/the-src/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"
+  url "https://github.com/thrive-intelligence/the-src/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license :cannot_represent
-  head "https://github.com/shaneatlas/the-src.git", branch: "main"
+  head "https://github.com/thrive-intelligence/the-src.git", branch: "main"
 
   depends_on "python@3.13"
 
