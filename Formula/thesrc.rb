@@ -3,8 +3,9 @@ class Thesrc < Formula
 
   desc "Cognitive OS for Claude — epistemic discipline + external validation"
   homepage "https://thesrc.ai"
-  url "https://github.com/thrive-intelligence/the-src/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  url "https://github.com/thrive-intelligence/the-src.git",
+      tag:      "v1.2.0",
+      revision: "fdf1482d"
   license :cannot_represent
   head "https://github.com/thrive-intelligence/the-src.git", branch: "main"
 
@@ -21,6 +22,7 @@ class Thesrc < Formula
         thesrc init              # hosted mode (Supabase + Neo4j Aura)
         thesrc init --local      # local Docker databases
         thesrc doctor            # check installation health
+        thesrc install-global    # load globally in all Claude Code sessions
 
       The Source transforms probabilistic LLM outputs into
       deterministic, verifiable reasoning.

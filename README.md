@@ -1,29 +1,38 @@
-# Homebrew Tap for The Source
+# The Source — Install
+
+### macOS / Linux (Homebrew)
 
 ```bash
 brew tap shaneatlas/thesrc
 brew install thesrc
 ```
 
-Then in any project directory:
+### Windows (pip)
 
 ```bash
-thesrc init
+pip install git+ssh://git@github.com/thrive-intelligence/the-src.git
 ```
 
-This scaffolds `.mcp.json`, `CLAUDE.md`, `.env`, and `.claude/skills/` — then runs migrations and seeds the skills taxonomy.
+### Any platform (pip)
 
-## Options
+```bash
+pip install git+ssh://git@github.com/thrive-intelligence/the-src.git
+```
 
-| Command | What it does |
-|:--------|:-------------|
-| `thesrc init` | Hosted mode — Supabase + Neo4j Aura |
-| `thesrc init --local` | Local Docker databases |
-| `thesrc doctor` | Health check |
-| `thesrc migrate` | Run database migrations |
-| `thesrc seed` | Seed skills taxonomy |
+> Requires repo access. You'll need SSH keys configured for GitHub.
 
-## Links
+---
 
-- [thesrc.ai](https://thesrc.ai) — live dashboard
-- [Source repo](https://github.com/thrive-intelligence/the-src)
+### After install
+
+```bash
+thesrc init                # scaffold project (Supabase + Neo4j Aura)
+thesrc init --local        # scaffold with local Docker databases
+thesrc doctor              # health check
+thesrc install-global      # load into all Claude Code sessions
+thesrc export-project      # export for Claude.ai web Projects
+```
+
+---
+
+[thesrc.ai](https://thesrc.ai) — [Source repo](https://github.com/thrive-intelligence/the-src)
